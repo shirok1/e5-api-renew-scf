@@ -90,6 +90,7 @@ def ABTrigUpdate(AnotherFunctionName, AnotherRegion, AnotherNamespace, TriggerNa
         params += '"TriggerName":"' + TriggerName + '",'
         params += '"Namespace":"' + AnotherNamespace + '",'
         params += '"Type":"timer",'
+        params += '"Enable":"OPEN",'
         params += '"TriggerDesc":"' + \
             to_china_timezone_cron(next_time) + '"}'
         req.from_json_string(params)
